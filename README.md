@@ -178,3 +178,20 @@ Another windows prompt will appear, click **Yes** to proceed
 
 ![attachments/rdp2.png](attachments/rdp2.png)
 
+Power on the Windows 11 virtual machine and proceed with the setup steps until you reach the Windows Desktop.
+
+![attachments/window-desktop.PNG](attachments/window-desktop.PNG)
+
+Open Microsoft Edge and navigate to https://www.wireshark.org/. Download the installer labeled Windows x64 Installer.
+
+![attachments/wireshark.png](attachments/wireshark.png)
+
+![attachments/wireshark2.png](attachments/wireshark2.png)
+
+Run the Wireshark installer and proceed through the installation by clicking 'Next' at each step to complete the setup
+
+![attachments/wireshark2.png](attachments/wireshark3.png)
+
+Once installation is complete, click **Finish**
+
+![attachments/wireshark2.png](attachments/wireshark2.png)
