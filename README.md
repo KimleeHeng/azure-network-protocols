@@ -16,7 +16,7 @@ This tutorial outlines the steps inspect and analyze packets and network protoco
 - TCP/IP, HTTP, ICMP (Network Protocols)
 
 ## Content Sections
-- [Create our Resources and Virtual Machines](##-Create-our-Resources-and-Virtual-Machines)
+- [Create our Resources and Virtual Machines](#-Create-our-Resources-and-Virtual-Machines)
 - Observing ICMP Traffic
 - Observing SSH Traffic
 - Observing DHCP Traffic
