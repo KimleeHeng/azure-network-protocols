@@ -17,7 +17,7 @@ This tutorial outlines the steps on how to observe network traffics and protocol
 
 ## Content Sections
 - [Create our Resources and Virtual Machines](#Create-our-Resources-and-Virtual-Machines)
-- Observing ICMP Traffic
+- [Observing ICMP Traffic](#Observing-ICMP-Traffic)
 - Observing SSH Traffic
 - Observing DHCP Traffic
 - Observing DNS Traffic
@@ -154,3 +154,5 @@ Click **Create** once more to initialize deployment of your virtual machine.
 ![attachments/create-vm2.png](attachments/create-vm2.png)
 
 **A Linux Ubuntu Virtual Machine has now successfully been created** 👍
+
+## Observing ICMP Traffic
