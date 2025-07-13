@@ -15,7 +15,15 @@ This tutorial outlines the steps inspect and analyze packets and network protoco
 - Wireshark (Packet Capture & Analysis)
 - TCP/IP, HTTP, ICMP (Network Protocols)
 
-## Setup Instructions
+## Content Sections
+- [Create our Resources and Virtual Machines](##-Create-our-Resources-and-Virtual-Machines)
+- Observing ICMP Traffic
+- Observing SSH Traffic
+- Observing DHCP Traffic
+- Observing DNS Traffic
+- Observing RDP Traffic
+
+## Create our Resources and Virtual Machines
 
 *NOTE: Ensure that you are logged into your Microsoft Azure account, and have a subscription active*
 
