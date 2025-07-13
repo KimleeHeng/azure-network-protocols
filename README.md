@@ -27,7 +27,7 @@ This tutorial outlines the steps inspect and analyze packets and network protoco
 
 *NOTE: Ensure that you are logged into your Microsoft Azure account, and have a subscription active*
 
-## Step 1: Create a new resource group within Microsoft Azure
+### Step 1: Create a new resource group within Microsoft Azure
 
 1.1 After logging into your Azure account, navigate to/search for "Resource Groups":
 
@@ -50,7 +50,7 @@ Following this, you will be prompted to review your new resource group informati
 
 **A resource group has now succcesfully been created.**
 
-## Step 2: Create a Windows 11 Virtual Machine
+### Step 2: Create a Windows 11 Virtual Machine
 
 2.1 Search for "Virtual Machine" in the search bar, or navigate to the Virtual Machine section back on the home page.
 
@@ -107,7 +107,7 @@ Click **Create** once more to initialize deployment of your virtual machine.
 
 **A Windows 11 Virtual Machine has now successfully been created.**
 
-## Step 3: Create a Linux (Ubuntu Server) Virtual Machine
+### Step 3: Create a Linux (Ubuntu Server) Virtual Machine
 
 3.1 Search for "Virtual Machine" in the search bar, or navigate to the Virtual Machine section back on the home page.
 
@@ -154,6 +154,3 @@ Click **Create** once more to initialize deployment of your virtual machine.
 ![attachments/create-vm2.png](attachments/create-vm2.png)
 
 **A Linux Ubuntu Virtual Machine has now successfully been created** 👍
-
-
-- [Create our Resources and Virtual Machines](##-Create-our-Resources-and-Virtual-Machines)
