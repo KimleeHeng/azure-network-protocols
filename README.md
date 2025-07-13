@@ -155,3 +155,5 @@ Click **Create** once more to initialize deployment of your virtual machine.
 
 **A Linux Ubuntu Virtual Machine has now successfully been created** 👍
 
+
+- [Create our Resources and Virtual Machines](##-Create-our-Resources-and-Virtual-Machines)
