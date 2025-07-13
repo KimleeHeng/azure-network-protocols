@@ -81,7 +81,7 @@ Click **Next: Disks>**, and then **Next: Networking >**
 
 ![attachments/7-admin-settings.png](attachments/7-admin-settings.png)
 
-Click **Create new** under Virtual Network. A window to create a virtual network should pop up
+2.4 Click **Create new** under Virtual Network. A window to create a virtual network should pop up
 
 ![attachments/8-vnet.png](attachments/8-vnet.png)
 
@@ -97,7 +97,7 @@ Back on the Virtual Machine page, Click **Review + Create** to proceed
 
 ![attachments/10-review-create.png](attachments/10-review-create.png)
 
-Confirm that **Validation passed** for your virtual machine.
+2.5 Confirm that **Validation passed** for your virtual machine.
 
 Review the the information you inputted, ensuring everything is correct.
 
@@ -137,7 +137,7 @@ Click **Next: Disks>**, and then **Next: Networking >**
 
 ![attachments/linux-acc-settings.png](attachments/linux-acc-settings.png)
 
-For our Virtual Network, we will be selecting the virtual network that we created when creating our Windows 11 virtual machine: **Lab-VNet**
+3.4 For our Virtual Network, we will be selecting the virtual network that we created when creating our Windows 11 virtual machine: **Lab-VNet**
 
 ![attachments/linux-vnet.png](attachments/linux-vnet.png)
 
@@ -145,7 +145,7 @@ Click **Review + Create** to proceed
 
 ![attachments/10-review-create.png](attachments/10-review-create.png)
 
-Confirm that **Validation passed** for your virtual machine.
+3.5 Confirm that **Validation passed** for your virtual machine.
 
 Review the the information you inputted, ensuring everything is correct.
 
@@ -156,3 +156,24 @@ Click **Create** once more to initialize deployment of your virtual machine.
 **A Linux Ubuntu Virtual Machine has now successfully been created** 👍
 
 ## Observing ICMP Traffic
+
+### Step 1: Use Remote Desktop to connect to your Windows 11 Virtual Machine
+
+1.1 On your Virtual Machine page within Azure, you will be able to see the designated Public IP Address for each virtual machine created.
+
+Use the Windows 11 Virtual Machine's IP address to log in through Remote Desktop
+
+![attachments/windows-ip-address.png](attachments/windows-ip-address.png)
+
+![attachments/rdp.png](attachments/rdp.png)
+
+1.2 A small windows security prompt will ask you to enter your credentials to log into the virtual machine
+
+- We will use the username and password that we made when creating the virtual machines **(labuser/Cyberlab123!)**
+
+![attachments/windows-credentials.PNG](attachments/windows-credentials.PNG)
+
+Another windows prompt will appear, click **Yes** to proceed
+
+![attachments/rdp2.PNG](attachments/rdp2.PNG)
+
