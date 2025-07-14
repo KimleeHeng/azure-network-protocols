@@ -194,4 +194,11 @@ Run the Wireshark installer and proceed through the installation by clicking 'Ne
 
 Once installation is complete, click **Finish**
 
-![attachments/wireshark2.png](attachments/wireshark2.png)
+![attachments/wireshark16.png](attachments/wireshark16.png)
+
+0.0 Open up Wireshark. Once the application is running, performing the following steps:
+- Highlight **Ethernet**
+- Click the blue fin at the top left corner to start **capturing packets**
+
+![attachments/wireshark-open1.png](attachments/wireshark-open1.png)
+
