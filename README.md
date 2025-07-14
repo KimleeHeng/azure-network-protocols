@@ -208,4 +208,20 @@ Once you have started capturing packets, you will notice a stream of entries in 
 
 ![attachments/wireshark-open2.png](attachments/wireshark-open2.png)
 
-## Observing ICMP Traffic
+## Observing ICMP Traffic + Network Security Groups
+
+ICMP (Internet Control Message Protocol) is a network protocol used for sending error messages and operational information. ICMP is the underlying protocol that makes the **ping** command functional. In this section, we will observe ICMP traffic through the following examples:
+- [Between our Windows 11 and Linux Ubuntu virtual machines](#Observing ICMP traffic between virtual machines)
+- Pinging a public domain (e.g. www.google.com)
+- Initiating a perpetual/non stop ping from our both virtual machines
+
+### Example 1: Observing ICMP traffic between virtual machines
+
+To start, we will obtain the private IP address of our Linux Ubuntu virtual machine.
+
+Head back to the virtual machine page on Azure, and click on **Linux VM**. On the right side of the page, under **Networking** the private IP address of the virtual machine should be displayed. This is the IP address that we will **ping** within our Windows 11 virtual machine.
+
+![attachments/linux-ip.png](attachments/linux-ip.png)
+
+On our Windows 11 virtual machine, filter out ICMP traffic on Wireshark by typing ICMP within the search/filter bar. This will result in only ICMP traffic being displayed.
+
