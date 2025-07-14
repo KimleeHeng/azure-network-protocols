@@ -18,7 +18,7 @@ This tutorial outlines the steps on how to observe network traffics and protocol
 ## Content Sections
 - [Create our Resources and Virtual Machines](#Create-our-Resources-and-Virtual-Machines)
 - [Login using RDP & Installing Wireshark](#Login-using-RDP-&-Installing-Wireshark)
-- Observing ICMP Traffic
+- [Observing ICMP Traffic](#Observing-ICMP-Traffic)
 - Observing SSH Traffic
 - Observing DHCP Traffic
 - Observing DNS Traffic
@@ -182,13 +182,15 @@ Power on the Windows 11 virtual machine and proceed with the setup steps until y
 
 ![attachments/window-desktop.PNG](attachments/window-desktop.PNG)
 
-Open Microsoft Edge and navigate to https://www.wireshark.org/. Download the installer labeled Windows x64 Installer.
+### Step 2: Installing Wireshark
+
+2.1 Open Microsoft Edge and navigate to https://www.wireshark.org/. Download the installer labeled Windows x64 Installer.
 
 ![attachments/wireshark.png](attachments/wireshark.png)
 
 ![attachments/wireshark2.png](attachments/wireshark2.png)
 
-Run the Wireshark installer and proceed through the installation by clicking 'Next' at each step to complete the setup
+2.2 Run the Wireshark installer and proceed through the installation by clicking 'Next' at each step to complete the setup
 
 ![attachments/wireshark2.png](attachments/wireshark3.png)
 
@@ -196,12 +198,14 @@ Once installation is complete, click **Finish**
 
 ![attachments/wireshark16.png](attachments/wireshark16.png)
 
-0.0 Open up Wireshark. Once the application is running, performing the following steps:
+2.3  Open up Wireshark. Once the application is running, performing the following steps:
 - Highlight **Ethernet**
 - Click the blue fin at the top left corner to start **capturing packets**
 
 ![attachments/wireshark-open1.png](attachments/wireshark-open1.png)
 
-Once you have started capturing packets, you will notice a stream of entries in Wireshark. This is ongoing network traffic that is happening on the backend of your virtual machine. Your network protocol analyzer (Wireshark) is capturing all incoming and outgoing packets, and from here we are able to observe various types of network traffic and protocols in real time
+Once you have started capturing packets, you will notice a stream of entries in Wireshark. This is ongoing network traffic that is happening on the backend of your virtual machine. Your network protocol analyzer (Wireshark) is capturing all incoming and outgoing packets, and from here we are able to observe various types of network traffic and protocols in real time.
 
 ![attachments/wireshark-open2.png](attachments/wireshark-open2.png)
+
+## Observing ICMP Traffic
