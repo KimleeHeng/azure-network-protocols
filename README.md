@@ -202,3 +202,6 @@ Once installation is complete, click **Finish**
 
 ![attachments/wireshark-open1.png](attachments/wireshark-open1.png)
 
+Once you have started capturing packets, you will notice a stream of entries in Wireshark. This is ongoing network traffic that is happening on the backend of your virtual machine. Your network protocol analyzer (Wireshark) is capturing all incoming and outgoing packets, and from here we are able to observe various types of network traffic and protocols in real time
+
+![attachments/wireshark-open2.png](attachments/wireshark-open2.png)
