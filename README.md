@@ -12,6 +12,7 @@ This tutorial outlines the steps on how to observe network traffics and protocol
 
 ## Technologies Used
 - Azure Virtual Machines
+- Windows Powershell (Commmand-line Shell)
 - Wireshark (Packet Capture & Analysis)
 - TCP/IP, HTTP, ICMP (Network Protocols)
 
@@ -211,9 +212,8 @@ Once you have started capturing packets, you will notice a stream of entries in 
 ## Observing ICMP Traffic + Network Security Groups
 
 ICMP (Internet Control Message Protocol) is a network protocol used for sending error messages and operational information. ICMP is the underlying protocol that makes the **ping** command functional. In this section, we will observe ICMP traffic through the following examples:
-- [Between our Windows 11 and Linux Ubuntu virtual machines](#Observing ICMP traffic between virtual machines)
-- Pinging a public domain (e.g. www.google.com)
-- Initiating a perpetual/non stop ping from our both virtual machines
+- [Between our Windows 11 and Linux Ubuntu virtual machines](#Observing-ICMP-traffic-between-virtual-machines)
+- [Initiating a continuous ping and configuring firewall rules (e.g., Network Security Groups)](#Initiating-a-continuous-ping-and-configuring-firewall-rules (e.g., Network Security Groups))
 
 ### Example 1: Observing ICMP traffic between virtual machines
 
@@ -225,3 +225,33 @@ Head back to the virtual machine page on Azure, and click on **Linux VM**. On th
 
 On our Windows 11 virtual machine, filter out ICMP traffic on Wireshark by typing ICMP within the search/filter bar. This will result in only ICMP traffic being displayed.
 
+![attachments/icmp.png](attachments/icmp.png)
+
+In the windows search bar, search for and open the application, **Windows Powershell**,
+
+From here, we will attempt to ping the Linux virtual machine using its private IP address to make contact.
+
+Type the following: **ping 10.0.0.5**, then click Enter
+
+![attachments/ping.png](attachments/ping.png)
+
+A successful ping has been made, as the Linux virtual machine is responding back to the requests from our Windows virtual machine
+
+![attachments/ping2.png](attachments/ping2.png)
+
+Navigate back to Wireshark, and you will be able to see the ICMP traffic that occurred between both virtual machines.
+
+![attachments/icmp-ping.png](attachments/icmp-ping.png)
+
+You'll notice that **Wireshark displays 8 packet entries**, whereas **Windows PowerShell shows only 4**.
+
+This is because:
+
+- **Wireshark** captures **both the request and reply packets** of the ping command.
+- **PowerShell** only displays the **replies** received from the Linux virtual machine.
+
+As a result, each ping generates **two packets** (one request, one reply), and Wireshark provides a more detailed view of the full network exchange.
+
+By analyzing these packets in Wireshark, we can clearly see the exchange of ICMP traffic between the two virtual machines.
+
+### Example 2: Initiating a continuous ping and configuring firewall rules (e.g., Network Security Groups)
