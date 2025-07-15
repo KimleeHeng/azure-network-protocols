@@ -209,7 +209,7 @@ Once you have started capturing packets, you will notice a stream of entries in 
 
 ![attachments/wireshark-open2.png](attachments/wireshark-open2.png)
 
-## Observing ICMP Traffic + Network Security Groups
+## Observing ICMP Traffic
 
 ICMP (Internet Control Message Protocol) is a network protocol used for sending error messages and operational information. ICMP is the underlying protocol that makes the **ping** command functional. In this section, we will observe ICMP traffic through the following examples:
 - [Between our Windows 11 and Linux Ubuntu virtual machines](#Observing-ICMP-traffic-between-virtual-machines)
