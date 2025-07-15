@@ -18,7 +18,7 @@ This tutorial outlines the steps on how to observe network traffics and protocol
 
 ## Content Sections
 - [Create our Resources and Virtual Machines](#Create-our-Resources-and-Virtual-Machines)
-- [Login using RDP & Installing Wireshark](#Login-using-RDP--Installing-Wireshark)
+- [Login using RDP and Installing Wireshark](#Login-using-RDP-and-Installing-Wireshark)
 - [Observing ICMP Traffic](#Observing-ICMP-Traffic)
 - Observing SSH Traffic
 - Observing DHCP Traffic
@@ -157,7 +157,7 @@ Click **Create** once more to initialize deployment of your virtual machine.
 
 **A Linux Ubuntu Virtual Machine has now successfully been created** 👍
 
-## Login using RDP & Installing Wireshark
+## Login using RDP and Installing Wireshark
 
 ### Step 1: Use Remote Desktop to connect to your Windows 11 Virtual Machine
 
