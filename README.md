@@ -52,6 +52,7 @@ Following this, you will be prompted to review your new resource group informati
 
 **A resource group has now succcesfully been created.**
 
+
 ### Step 2: Create a Windows 11 Virtual Machine
 
 2.1 Search for "Virtual Machine" in the search bar, or navigate to the Virtual Machine section back on the home page.
@@ -108,6 +109,7 @@ Click **Create** once more to initialize deployment of your virtual machine.
 ![attachments/create-vm.png](attachments/create-vm.png)
 
 **A Windows 11 Virtual Machine has now successfully been created.**
+
 
 ### Step 3: Create a Linux (Ubuntu Server) Virtual Machine
 
@@ -182,6 +184,7 @@ Another windows prompt will appear, click **Yes** to proceed
 Power on the Windows 11 virtual machine and proceed with the setup steps until you reach the Windows Desktop.
 
 ![attachments/window-desktop.PNG](attachments/window-desktop.PNG)
+
 
 ### Step 2: Installing Wireshark
 
@@ -258,13 +261,21 @@ By analyzing these packets in Wireshark, we can clearly see the exchange of ICMP
 
 We will initiate a perpetual ping from the Windows 11 virtual machine to the Linux Ubuntu virtual machine.
 
-To perform this, type the following into Windows Powershell, then enter:
+To perform this, type the following into Windows Powershell, then run the command:
 
 - **ping  10.0.0.5 -t**
-- 
-![attachments/icmp-ping.png](attachments/icmp-ping.png)
 
-_NOTE_: This is almost the same as the previous example, except we are adding **"-t"** to the end of our entry. This results in a constant loop of our Windows 11 and Linux Ubuntu virtual machines.
+_NOTE_: This is a continuation of the previous example, with the -t flag added to the ping command to create a continuous stream of ICMP requests between the Windows 11 and Linux Ubuntu virtual machines
+
+![attachments/ping-t2.png](attachments/ping-t2.png)
 
 Back on Wireshark, the same activity is reflected. You will see multiple request and reply packets being captured between both virtual machines.
+
+![attachments/ping-t3.png](attachments/ping-t3.png)
+
+**Now we are going to open up the Network Security Group for the Linux Ubuntu virtual machine, and disable incoming ICMP traffic. After, we will observe the network traffic in Wiresharkto see the resulting behavior.**
+
+Head over to our Azure portal, and open up Linux-VM
+
+Navigate to **Network settings** and under **Network Security Group**, click 
 
