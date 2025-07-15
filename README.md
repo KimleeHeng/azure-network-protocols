@@ -255,3 +255,16 @@ As a result, each ping generates **two packets** (one request, one reply), and W
 By analyzing these packets in Wireshark, we can clearly see the exchange of ICMP traffic between the two virtual machines.
 
 ### Example 2: Initiating a continuous ping and configuring firewall rules (e.g., Network Security Groups)
+
+We will initiate a perpetual ping from the Windows 11 virtual machine to the Linux Ubuntu virtual machine.
+
+To perform this, type the following into Windows Powershell, then enter:
+
+- **ping  10.0.0.5 -t**
+- 
+![attachments/icmp-ping.png](attachments/icmp-ping.png)
+
+_NOTE_: This is almost the same as the previous example, except we are adding **"-t"** to the end of our entry. This results in a constant loop of our Windows 11 and Linux Ubuntu virtual machines.
+
+Back on Wireshark, the same activity is reflected. You will see multiple request and reply packets being captured between both virtual machines.
+
