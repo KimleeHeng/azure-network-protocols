@@ -277,5 +277,26 @@ Back on Wireshark, the same activity is reflected. You will see multiple request
 
 Head over to our Azure portal, and open up Linux-VM
 
-Navigate to **Network settings** and under **Network Security Group**, click 
+Navigate to **Network settings** and under **Network Security Group**, click **Linux-VM-nsg**
+
+![attachments/linux-nsg.png](attachments/linux-nsg.png)
+_NOTE_: A Network Security Group (NSG) is a virtual firewall used in Microsoft Azure to control inbound and outbound network traffic to and from Azure resources, such as virtual machines (VMs), subnets, or network interfaces.
+
+On the left hand side, click **Settings > Inbound security rules**, then click **Add**
+
+![attachments/linux-nsg2.png](attachments/linux-nsg2.png)
+
+Here we will create an inbound security rule preventing ICMP traffic from going into our Windows virtual machine. We will observe the activity that occurs afterwards.
+
+Fill in the following information:
+
+- Destination port ranges - *****
+- Protocol - **ICMPv4**
+- Priority - **290**
+
+Then click **Add** to create rule
+
+![attachments/linux-nsg3.png](attachments/linux-nsg3.png)
+
+
 
