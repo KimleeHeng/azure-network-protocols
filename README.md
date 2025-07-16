@@ -292,6 +292,7 @@ Fill in the following information:
 
 - Destination port ranges - * (just an asterisk)
 - Protocol - **ICMPv4** (ICMP protocol)
+- Action - **Deny** (Will prevent incoming ICMP traffic)
 - Priority - **290** (Will be highest priority within our security rules)
 
 Then click **Add** to create rule
