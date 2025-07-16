@@ -290,7 +290,7 @@ Here we will create an inbound security rule preventing ICMP traffic from going 
 
 Fill in the following information:
 
-- Destination port ranges - *****
+- Destination port ranges - *
 - Protocol - **ICMPv4**
 - Priority - **290**
 
