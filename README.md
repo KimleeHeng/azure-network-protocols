@@ -290,13 +290,28 @@ Here we will create an inbound security rule preventing ICMP traffic from going 
 
 Fill in the following information:
 
-- Destination port ranges - *
-- Protocol - **ICMPv4**
-- Priority - **290**
+- Destination port ranges - * (just an asterisk)
+- Protocol - **ICMPv4** (ICMP protocol)
+- Priority - **290** (Will be highest priority within our security rules)
 
 Then click **Add** to create rule
 
 ![attachments/linux-nsg3.png](attachments/linux-nsg3.png)
 
+Back on our Windows virtual machine, our perpetual ping within Windows Powershell will start to time out. This is because the inbound security rule that we created has started, and is blocking the ICMP request packets coming from the Windows virtual machine to the Linux virtual machine.
+
+This results in the Windows virtual machine not being able to receive a reply packet, thus making our Powershell time out.
+
+![attachments/linux-nsg4.png](attachments/linux-nsg4.png)
+
+This is also reflected on Wireshark as well. No responses will be found as the request packets aren't going through.
+
+![attachments/linux-nsg5.png](attachments/linux-nsg5.png)
+
+With Network Security Groups, we are able to create rules to allow/deny certain network protocols for both inbound and outbound traffic
+
+Let's go ahead and remove the inbound security rule we made. Go back into the Linux virtual machine's network security group in Azure and delete the inbound security rule by performing the following:
+
+![attachments/linux-nsg6.png](attachments/linux-nsg6.png)
 
 
