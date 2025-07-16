@@ -313,6 +313,17 @@ With Network Security Groups, we are able to create rules to allow/deny certain 
 
 Let's go ahead and remove the inbound security rule we made. Go back into the Linux virtual machine's network security group in Azure and delete the inbound security rule by performing the following:
 
+- Check security rule
+- Click trash icon
+- Click Yes to delete security rule
+
 ![attachments/linux-nsg6.png](attachments/linux-nsg6.png)
 
+Back on our Windows virtual machine, our perpetual ping within Windows Powershell will continue again, as the security rule has been removed. Request and reply packets, and ICMP traffic can now communicate between virtual machines.
+
+![attachments/linux-nsg7.png](attachments/linux-nsg7.png)
+
+The ICMP traffic on Wireshark is now up and running as well.
+
+![attachments/linux-nsg8.png](attachments/linux-nsg8.png)
 
