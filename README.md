@@ -327,3 +327,5 @@ The ICMP traffic on Wireshark is now up and running as well.
 
 ![attachments/linux-nsg8.png](attachments/linux-nsg8.png)
 
+By performing these examples, we’ve demonstrated how ICMP traffic operates within a network and how tools like Wireshark can be used to monitor it. We also explored how firewall rules, such as those configured in Network Security Groups and how it directly impact the flow of network traffic. This provides valuable insight into both connectivity diagnostics and network security control.
+
