@@ -355,13 +355,33 @@ In Wireshark, start a packet capture up and filter for **SSH** traffic only
 
 From your Windows 10 virtual machine, open up Windows Powershell. We will now **"SSH into"** our Linux Ubuntu virtual machine via its private IP address
 
-Type in the following:
-
-- _ssh labuser@10.0.0.5_
-
-Then press Enter.
+Type in the following: _ssh labuser@10.0.0.5_, then click Enter.
 
 ![attachments/ssh1.png](attachments/ssh1.png)
 
+You will be prompted to continue connecting to the Linux virtual machine.
 
+Perform the following:
 
+- Type **yes**, then click enter
+- After, type the Linux virtual machine's password: **Cyberlab123!**, then click enter
+
+![attachments/ssh2.png](attachments/ssh2.png)
+
+_NOTE_: When you tpye your password here, nothing will appear. This is for security purposes. Rest assured text will still be entered.
+
+As you can see in Windows Powershell, the prompt changed to **labuser@Linux-VM**, which means we are now securely connected to our Linux virtual machine through SSH.
+
+![attachments/ssh4.png](attachments/ssh4.png)
+
+Back in Wireshark, SSH traffic is reflected from our activity in Windows Powershell
+
+![attachments/ssh3.png](attachments/ssh3.png)
+
+To show that we are connected to the Linux Ubuntu virtual machine, we can type some commands to test it out.
+
+Type **hostname**, then click enter.
+
+Here, it will prompt the following message: **linux-vm**. Even though we are on our Windows virtual machine, we are remotely connected to our Linux virtual machine via SSH. This allows us to control and execute commands from our Windows command line tool.
+
+![attachments/hostname.PNG](attachments/hostname.PNG)
