@@ -21,7 +21,7 @@ This tutorial outlines the steps on how to observe network traffics and protocol
 - [Login using RDP and Installing Wireshark](#Login-using-RDP-and-Installing-Wireshark)
 - [Observing ICMP Traffic](#Observing-ICMP-Traffic)
 - [Observing SSH Traffic](#Observing-SSH-Traffic)
-- Observing DHCP Traffic
+- [Observing DHCP Traffic](#Observing-DHCP-Traffic)
 - Observing DNS Traffic
 - Observing RDP Traffic
 
@@ -396,6 +396,58 @@ Here, it will prompt the following message: **/home/labuser**. This example show
 
 Exit the SSH connection by typing **exit** and clicking Enter
 
-![attachments/exit.PNG](attachments/exit.PNG)
+![attachments/exit1.PNG](attachments/exit1.PNG)
 
+## Observing DHCP traffic
+
+DHCP (Dynamic Host Configuration Protocol) is a network protocol used automatically assign an IP address and other network settings to a device on the network. In this section, we will observe SSH traffic through the following example:
+
+- [Requesting a new IP Address via DHCP](#requesting-a-new-ip-address-via-dhcp)
+
+### Requesting a new IP Address via DHCP
+
+To start, make sure the following has been performed:
+
+- Log in to your Windows virtual machine
+- Start up Wireshark
+
+In Wireshark, start a packet capture up and filter for **DHCP** traffic only
+
+![attachments/dhcp.png](attachments/dhcp.png)
+
+Open up an instance of Notepad and type in the following
+
+```
+ipconfig /release
+ipconfig /renew
+```
+
+Save the notepad document by performing the following steps
+
+- File type: Enter **c:\programdata**
+- File name: **dhcp.bat**
+- File type: **All Files**
+
+![attachments/notepad-save.png](attachments/notepad-save.png)
+
+Run Windows Powershell as Administrator by right clicking the application and clicking "Run as Administrator"
+
+![attachments/run-as-admin.png](attachments/run-as-admin.png)
+
+Run the following command:
+
+```
+cd c:\programdata
+```
+
+![attachments/programdata.png](attachments/programdata.png)
+
+and then:
+```
+.\dhcp.bat
+```
+
+![attachments/dhcp-bat.png](attachments/dhcp-bat.png)
+
+Once the previous command is run, the Windows virtual machine releases its current IP address and requests a new one from the DHCP server through the DHCP handshake process.
 
