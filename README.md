@@ -27,7 +27,7 @@ This tutorial outlines the steps on how to observe network traffics and protocol
 
 ## Create our Resources and Virtual Machines
 
-*NOTE: Ensure that you are logged into your Microsoft Azure account, and have a subscription active*
+*NOTE: Ensure that you are logged into your Microsoft Azure account, and have a subscription active.*
 
 ### Step 1: Create a new resource group within Microsoft Azure
 
@@ -349,11 +349,11 @@ To start, make sure the following has been performed:
 - Log in to your Windows virtual machine
 - Start up Wireshark
 
-In Wireshark, start a packet capture up and filter for **SSH** traffic only
+In Wireshark, start a packet capture up and filter for **SSH** traffic only.
 
 ![attachments/ssh.png](attachments/ssh.png)
 
-From your Windows 10 virtual machine, open up Windows Powershell. We will now **"SSH into"** our Linux Ubuntu virtual machine via its private IP address
+From your Windows 10 virtual machine, open up Windows Powershell. We will now **"SSH into"** our Linux Ubuntu virtual machine via its private IP address.
 
 Type in the following: _ssh labuser@10.0.0.5_, then click Enter.
 
@@ -397,6 +397,8 @@ Here, it will prompt the following message: **/home/labuser**. This example show
 Exit the SSH connection by typing **exit** and clicking Enter
 
 ![attachments/exit1.PNG](attachments/exit1.PNG)
+
+This example showed how SSH traffic works on a network and how Wireshark can be used to observe it. We also learned how SSH securely connects to remote systems, giving us a better understanding of encrypted communication
 
 ## Observing DHCP traffic
 
@@ -464,7 +466,10 @@ This is the standard 4 step process known as DORA that is used by DHCP to assign
 | 3️⃣  | **DHCP Request**  | The client requests to use the offered IP address by sending a DHCP Request message.           |
 | 4️⃣  | **DHCP ACK**      | The server acknowledges the request and officially assigns the IP to the client.               |
 
-Here is another representation on how the DHCP handshake works. Again, this is the standard 4 step process known as DORA that is used by DHCP to assign an IP address to a client
+Here is another representation on how the DHCP handshake works. Again, this is the standard 4 step process known as DORA that is used by DHCP to assign an IP address to a client.
 
 ![attachments/handshake.PNG](attachments/handshake.PNG)
+
+This example showed how DHCP works on a network and how Wireshark helps us see the traffic involved. We also learned about the DORA process and how it’s used during the DHCP handshake to assign an IP address to a device.
+
 
