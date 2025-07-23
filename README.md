@@ -454,3 +454,17 @@ Once the previous command is run, the Windows virtual machine releases its curre
 In Wireshark, the following DHCP packets will appear, each representing a step in the DHCP handshake process.
 
 ![attachments/dora.png](attachments/dora.png)
+
+This is the standard 4 step process known as DORA that is used by DHCP to assign an IP address to a client. The steps of the DHCP handshake are shown in the table below:
+
+| Step | Protocol Message  | Description                                                                                    |
+| ---- | ----------------- | ---------------------------------------------------------------------------------------------- |
+| 1️⃣  | **DHCP Discover** | The client (source: `0.0.0.0`) broadcasts a request to find a DHCP server.                     |
+| 2️⃣  | **DHCP Offer**    | A DHCP server (source: `168.63.129.16`) responds with an IP address offer and network details. |
+| 3️⃣  | **DHCP Request**  | The client requests to use the offered IP address by sending a DHCP Request message.           |
+| 4️⃣  | **DHCP ACK**      | The server acknowledges the request and officially assigns the IP to the client.               |
+
+Here is another representation on how the DHCP handshake works. Again, this is the standard 4 step process known as DORA that is used by DHCP to assign an IP address to a client
+
+![attachments/handshake.PNG](attachments/handshake.PNG)
+
