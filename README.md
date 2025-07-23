@@ -20,7 +20,7 @@ This tutorial outlines the steps on how to observe network traffics and protocol
 - [Create our Resources and Virtual Machines](#Create-our-Resources-and-Virtual-Machines)
 - [Login using RDP and Installing Wireshark](#Login-using-RDP-and-Installing-Wireshark)
 - [Observing ICMP Traffic](#Observing-ICMP-Traffic)
-- Observing SSH Traffic
+- [Observing SSH Traffic](#Observing-SSH-Traffic)
 - Observing DHCP Traffic
 - Observing DNS Traffic
 - Observing RDP Traffic
