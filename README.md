@@ -393,3 +393,5 @@ Type **pwd**, then click enter.
 Here, it will prompt the following message: **/home/labuser**. This example shows that we are in the working directory of **/home/labuser** which is in our Linux virtual machine.
 
 ![attachments/pwd.PNG](attachments/pwd.PNG)
+
+
