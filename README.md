@@ -335,9 +335,33 @@ By performing these examples, we’ve demonstrated how ICMP traffic operates wit
 
 ## Observing SSH Traffic
 
-SSH (Secure Shell) is a network protocol used to securely connect one computer to another over an unsecured network. SSH allows users to remotely log in, run commands, and manage systems, all while encrypting the connection to protect data ferom interception. In this section, we will observe SSH traffic through the following example:
+SSH (Secure Shell) is a network protocol used to securely connect one computer to another over an unsecured network. It is used for secure remote access and system administration over a network.
+
+SSH also allows users to remotely log in, run commands, and manage systems, all while encrypting the connection to protect data from interception. In this section, we will observe SSH traffic through the following example:
 
 - [Observing SSH traffic between virtual machines](#observing-ssh-traffic-between-virtual-machines)
 
 ### Observing SSH traffic between virtual machines
+
+To start, make sure the following has been performed:
+
+- Both virtual machines are turned on (Windows and Linux)
+- Log in to your Windows virtual machine
+- Start up Wireshark
+
+In Wireshark, start a packet capture up and filter for **SSH** traffic only
+
+![attachments/ssh.png](attachments/ssh.png)
+
+From your Windows 10 virtual machine, open up Windows Powershell. We will now **"SSH into"** our Linux Ubuntu virtual machine via its private IP address
+
+Type in the following:
+
+- _ssh labuser@10.0.0.5_
+
+Then press Enter.
+
+![attachments/ssh1.png](attachments/ssh1.png)
+
+
 
