@@ -376,6 +376,8 @@ As you can see in Windows Powershell, the prompt changed to **labuser@Linux-VM**
 
 Back in Wireshark, SSH traffic is reflected from our activity in Windows Powershell
 
+Any activity performed in Windows PowerShell while connected via SSH will generate corresponding traffic that can be observed in Wireshark. This includes everything from executing commands to simply typing in the command-line interface
+
 ![attachments/ssh3.png](attachments/ssh3.png)
 
 To show that we are connected to the Linux Ubuntu virtual machine, we can type some commands to test it out.
@@ -385,3 +387,9 @@ Type **hostname**, then click enter.
 Here, it will prompt the following message: **linux-vm**. Even though we are on our Windows virtual machine, we are remotely connected to our Linux virtual machine via SSH. This allows us to control and execute commands from our Windows command line tool.
 
 ![attachments/hostname.PNG](attachments/hostname.PNG)
+
+Type **pwd**, then click enter.
+
+Here, it will prompt the following message: **/home/labuser**. This example shows that we are in the working directory of **/home/labuser** which is in our Linux virtual machine.
+
+![attachments/pwd.PNG](attachments/pwd.PNG)
