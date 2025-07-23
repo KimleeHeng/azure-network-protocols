@@ -305,7 +305,7 @@ This results in the Windows virtual machine not being able to receive a reply pa
 
 ![attachments/linux-nsg4.png](attachments/linux-nsg4.png)
 
-This is also reflected on Wireshark as well. No responses will be found as the request packets aren't going through.
+This is also reflected on Wireshark as well. No responses will be found as the request packets from the Windows virtual machine aren't going through.
 
 ![attachments/linux-nsg5.png](attachments/linux-nsg5.png)
 
