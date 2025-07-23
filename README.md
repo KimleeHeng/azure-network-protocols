@@ -451,3 +451,6 @@ and then:
 
 Once the previous command is run, the Windows virtual machine releases its current IP address and requests a new one from the DHCP server through the DHCP handshake process.
 
+In Wireshark, the following DHCP packets will appear, each representing a step in the DHCP handshake process.
+
+![attachments/dora.png](attachments/dora.png)
