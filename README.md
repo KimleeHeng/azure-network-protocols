@@ -327,5 +327,17 @@ The ICMP traffic on Wireshark is now up and running as well.
 
 ![attachments/linux-nsg8.png](attachments/linux-nsg8.png)
 
+Go ahead and stop the perpetual ping by pressing **CRTL + C**
+
+![attachments/control-c.png](attachments/control-c.png)
+
 By performing these examples, we’ve demonstrated how ICMP traffic operates within a network and how tools like Wireshark can be used to monitor it. We also explored how firewall rules, such as those configured in Network Security Groups and how it directly impact the flow of network traffic. This provides valuable insight into both connectivity diagnostics and network security control.
+
+## Observing SSH Traffic
+
+SSH (Secure Shell) is a network protocol used to securely connect one computer to another over an unsecured network. SSH allows users to remotely log in, run commands, and manage systems, all while encrypting the connection to protect data ferom interception. In this section, we will observe SSH traffic through the following example:
+
+- [Observing SSH traffic between virtual machines](#observing-ssh-traffic-between-virtual-machines)
+
+### Observing SSH traffic between virtual machines
 
