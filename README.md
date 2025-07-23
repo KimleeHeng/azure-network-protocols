@@ -299,7 +299,7 @@ Then click **Add** to create rule
 
 ![attachments/linux-nsg3.png](attachments/linux-nsg3.png)
 
-Back on our Windows virtual machine, our perpetual ping within Windows Powershell will start to time out. This is because the inbound security rule that we created has started, and is blocking the ICMP request packets coming from the Windows virtual machine to the Linux virtual machine.
+Back on our Windows virtual machine, our perpetual ping within Windows Powershell will start to time out. This is because the inbound security rule that we created has started taking affect, and is blocking the ICMP request packets coming from the Windows virtual machine to the Linux virtual machine.
 
 This results in the Windows virtual machine not being able to receive a reply packet, thus making our Powershell time out.
 
