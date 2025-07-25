@@ -22,7 +22,7 @@ This tutorial outlines the steps on how to observe network traffics and protocol
 - [Observing ICMP Traffic](#Observing-ICMP-Traffic)
 - [Observing SSH Traffic](#Observing-SSH-Traffic)
 - [Observing DHCP Traffic](#Observing-DHCP-Traffic)
-- [Observing DNS Traffic](Observing-DNS-Traffic)
+- [Observing DNS Traffic](#Observing-DNS-Traffic)
 
 ## Create our Resources and Virtual Machines
 
