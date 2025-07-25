@@ -1,6 +1,6 @@
 # Inspecting Network Protocols within Azure
 
-This tutorial outlines the steps on how to observe network traffics and protocols using Wireshark within Azure Virtual Machines
+This tutorial outlines the steps on how to observe network traffics and protocols using Wireshark and Windows Powershell within Azure Virtual Machines
 
 ## Prerequisites Needed
 - Microsoft Azure Subscription (Free/Pay as you go)
