@@ -505,7 +505,7 @@ What came back was the public IP Address of the domain that we inputted into our
 
 Back in Wireshark, DNS traffic is reflected from our activity in Windows Powershell
 
-In this lab, we used DNS to resolve domain names to IP addresses, demonstrating how devices rely on DNS to locate and connect to remote servers. Tools like nslookup and Wireshark helped us observe and analyze the DNS query and response process in real time.
-
 ![attachments/dns3.png](attachments/dns3.png)
+
+In this lab, we used DNS to resolve domain names to IP addresses, demonstrating how devices rely on DNS to locate and connect to remote servers. Tools like nslookup and Wireshark helped us observe and analyze the DNS query and response process in real time.
 
