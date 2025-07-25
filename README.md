@@ -14,7 +14,7 @@ This tutorial outlines the steps on how to observe network traffics and protocol
 - Azure Virtual Machines
 - Windows Powershell (Commmand-line Shell)
 - Wireshark (Packet Capture & Analysis)
-- TCP/IP, HTTP, ICMP (Network Protocols)
+- TCP/IP, ICMP, SSH, DHCP, DNS (Network Protocols)
 
 ## Content Sections
 - [Create our Resources and Virtual Machines](#Create-our-Resources-and-Virtual-Machines)
