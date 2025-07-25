@@ -475,7 +475,7 @@ This example showed how DHCP works on a network and how Wireshark helps us see t
 
 DNS (Domain Name System) is a network protocol that translates human-readable domain names into IP addresses that computers use to communicate with each other over the internet or a network. In this section, we will observe DNS traffic through the following example:
 
-- [nslookup within Windows Powershell](nslookup-within-Windows-Powershell)
+- [nslookup within Windows Powershell](#nslookup-within-Windows-Powershell)
 
 ### nslookup within Windows Powershell
 
