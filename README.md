@@ -22,8 +22,7 @@ This tutorial outlines the steps on how to observe network traffics and protocol
 - [Observing ICMP Traffic](#Observing-ICMP-Traffic)
 - [Observing SSH Traffic](#Observing-SSH-Traffic)
 - [Observing DHCP Traffic](#Observing-DHCP-Traffic)
-- Observing DNS Traffic
-- Observing RDP Traffic
+- [Observing DNS Traffic](Observing-DNS-Traffic)
 
 ## Create our Resources and Virtual Machines
 
@@ -472,4 +471,41 @@ Here is another representation on how the DHCP handshake works. Again, this is t
 
 This example showed how DHCP works on a network and how Wireshark helps us see the traffic involved. We also learned about the DORA process and how it’s used during the DHCP handshake to assign an IP address to a device.
 
+## Observing DNS Traffic
+
+DNS (Domain Name System) is a network protocol that translates human-readable domain names into IP addresses that computers use to communicate with each other over the internet or a network. In this section, we will observe DNS traffic through the following example:
+
+- [nslookup within Windows Powershell](nslookup-within-Windows-Powershell)
+
+### nslookup within Windows Powershell
+
+To start, make sure the following has been performed:
+
+- Log in to your Windows virtual machine
+- Start up Wireshark
+- Start up Windows Powershell
+
+In Wireshark, start a packet capture up and filter for **DNS** traffic only.
+
+![attachments/dns2.png](attachments/dns2.png)
+
+We will be using the command **nslookup** for this DNS activity. **nslookup** is a command line tool used to query DNS to obtain the domain name or IP address mapping information.
+
+In Windows Powershell, we will type in the following command, then click enter
+
+_NOTE_: Any public website or domain can be inserted here.
+
+```
+nslookup disney.com
+```
+
+What came back was the public IP Address of the domain that we inputted into our command line interface. In this case, the IP address for **disney.com** is **130.211.198.204**
+
+![attachments/dns.png](attachments/dns.png)
+
+Back in Wireshark, DNS traffic is reflected from our activity in Windows Powershell
+
+In this lab, we used DNS to resolve domain names to IP addresses, demonstrating how devices rely on DNS to locate and connect to remote servers. Tools like nslookup and Wireshark helped us observe and analyze the DNS query and response process in real time.
+
+![attachments/dns3.png](attachments/dns3.png)
 
